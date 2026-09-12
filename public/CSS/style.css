@@ -214,3 +214,63 @@ body {
         min-height: 42px;
     }
 }
+
+
+/* =========================
+   Mobile Review Fix
+   ========================= */
+
+@media (max-width: 768px) {
+    /* Review container */
+    .review,
+    .review-card,
+    .review-box {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    /* Review text */
+    .review p,
+    .review-card p,
+    .review-box p {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+    /* Review textarea */
+    .review textarea,
+    .review-card textarea,
+    .review-box textarea {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        resize: vertical;
+    }
+    /* Review buttons */
+    .review button,
+    .review-card button,
+    .review-box button {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+
+/* Very small phones */
+
+@media (max-width: 480px) {
+    .review,
+    .review-card,
+    .review-box {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .review p,
+    .review-card p,
+    .review-box p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+}
