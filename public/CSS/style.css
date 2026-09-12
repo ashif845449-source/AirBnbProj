@@ -274,3 +274,35 @@ body {
         line-height: 1.5;
     }
 }
+
+
+/* =========================
+   Review Mobile Layout Fix
+   ========================= */
+
+@media (max-width: 768px) {
+    /* Review section full width on mobile */
+    .col-8.offset-3.mb-3 {
+        width: 100% !important;
+        margin-left: 0 !important;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        box-sizing: border-box;
+    }
+    /* All review cards full width */
+    .card.col-5.ms-3.mb-3 {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        box-sizing: border-box;
+    }
+    /* Star rating stays inside the card */
+    .starability-result {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .starability-slot {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
