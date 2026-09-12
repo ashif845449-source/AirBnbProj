@@ -35,6 +35,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 const store = MongoStore.create({
     mongoUrl: dbUrl,
     collectionName: "sessions_final",
+    stringify: false,
     touchAfter: 24 * 3600,
 });
 
